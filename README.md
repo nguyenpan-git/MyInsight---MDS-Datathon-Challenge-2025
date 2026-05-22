@@ -10,10 +10,18 @@
 This repository contains the solution for the **MyInsight MDS Datathon Challenge 2025 (1st Runner-Up)**. The project focuses on detecting and mitigating bot-driven promotion abuse in ZaloPay's e-wallet campaigns, addressing a potential revenue loss of 1.18 billion VND.
 
 ## Key Highlights
-* **Data Processing:** Analyzed 7 interconnected datasets covering over 864K+ users to trace and identify promotion abuse patterns.
-* **Risk Scoring Model:** Developed a real-time Rule-based Scoring System (Heuristic Model) extracting quantitative features for 5 abnormal behavioral patterns (e.g., transaction speed, spamming, duplicate IPs).
-* **Optimization:** Fine-tuned the detection threshold using the Gini index (0.82) to balance Precision and Recall, achieving an optimal 0.13% False Positive Rate.
-* **Strategic Solutions:** Proposed proactive defense mechanisms including hidden honeypot codes and gamified CAPTCHA to block bots without degrading genuine user experience.
+* **Data Analysis & Processing:** Processed and cleaned an interconnected dataset of 7 tables involving over 864,000 users , isolating bot-driven promotion abuse behaviors that caused a financial loss of 1.18 billion VND for the business.
+* **Risk Detection Modeling:** Engineered features for 5 abnormal behaviors (transaction speed, repeated amounts, campaign spamming, etc.) to build a real-time user risk scoring system.
+* **Quantitative Optimization:** Applied the Gini index (achieving 0.82) to fine-tune the detection threshold, balancing Precision and Recall, and maintaining an optimal false positive rate (FPR) of 0.13%.
+* **Product-led Solutions:** Designed proactive defense mechanisms, including hidden honeypot codes and gamified CAPTCHA verification via Minigames , effectively blocking automated bots without impacting the genuine user experience.
+
+## MODEL USED IN THE CODE
+* The model implemented in the provided code is a Rule-based Scoring System (Heuristic Model).
+* This system does not learn from data autonomously like traditional Machine Learning; instead, it operates on defined business rules:
+  * Feature extraction based on business logic for 5 specific risk criteria.
+  * Assigning static weighted scores (ranging from 1 to 8 points) for varying levels of user violations.
+  * Aggregating the scores (total_score) and establishing a classification threshold to make decisions.
+  * Applying Machine Learning evaluation metrics (Gini Index, Confusion Matrix) to identify the optimal cut-off point at 9.
 
 ## Repository Structure
 * `Data/`: Contains the sample/masked datasets used for analysis. *(Note: Full raw data is hosted externally due to size limits).*
@@ -21,6 +29,8 @@ This repository contains the solution for the **MyInsight MDS Datathon Challenge
 * `myInsight_V3_AE66_Dashboard.pbix`: Power BI dashboard for interactive data visualization. 
 * `myInsight_V3_AE66_Report.pdf`: Comprehensive slide deck detailing the business problem, methodology, and recommendations.
 * `result.xlsx`: The final output file containing user risk scores and fraud classification flags.
+
+
 
 * ## External Assets
 Due to GitHub's file size limitations, the raw datasets and the interactive Power BI file are hosted securely on Google Drive.
