@@ -35,5 +35,5 @@ This repository contains the solution for the **MyInsight MDS Datathon Challenge
 * ## External Assets
 Due to GitHub's file size limitations, the raw datasets and the interactive Power BI file are hosted securely on Google Drive.
 
-* 🔗 **[Raw Data Folder (Google Drive)]([DÁN_LINK_THƯ_MỤC_DATA_VÀO_ĐÂY](https://drive.google.com/drive/folders/1fr9yWn04LT8iZtEeV8fpg_nnTmU0IEqu?usp=drive_link))**: Contains the original masked CSV datasets.
-* 🔗 **[Power BI Dashboard (Google Drive)]([DÁN_LINK_FILE_PBIX_VÀO_ĐÂY](https://drive.google.com/file/d/1XXidE9SaMlfab4X3i2IjsvwnhaIKAqcr/view?usp=sharing))**: The `.pbix` file for interactive data visualization.
+* 🔗 **[Raw Data Folder (Google Drive)](https://drive.google.com/drive/folders/1fr9yWn04LT8iZtEeV8fpg_nnTmU0IEqu?usp=drive_link)**: Contains the original masked CSV datasets.
+* 🔗 **[Power BI Dashboard (Google Drive)](https://drive.google.com/file/d/1XXidE9SaMlfab4X3i2IjsvwnhaIKAqcr/view?usp=sharing)**: The `.pbix` file for interactive data visualization.
